@@ -1,0 +1,136 @@
+html, body {
+    padding: 0px;
+    margin: 0 auto;
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    font-family: 'Tangerine', cursive;
+    font-size: 75px;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Tangerine', cursive;
+    font-size: 65px;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: 'Tangerine', cursive;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+h5 {
+    font-family: 'Merriweather', serif;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.logo {
+    float: left;
+	margin-left: 10px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+.misja > img {
+    border-radius: 50%;
+}
+.box01 {
+    max-width:2000px;
+}
+.box01, p {
+    text-align: justify;
+}
+
+.box01 > div > img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.box01 > div > p{
+    text-align: justify;
+    padding: 10px;
+}
+
+.home {
+     max-width:2000px;
+}
+
+.home-img {
+	margin-top: 55px;
+    width: 100%
+}
+
+.box01_02 {
+    padding-bottom: 20px;
+}
+
+.box01_02 > div > img {
+    width: 100%;
+    padding-bottom: 0px;
+}
+
+.misja {
+    text-align: center;
+}
+
+.box01_01 h2 {
+    text-align: center;
+    font-weight: 500;
+}
+
+.box02 h2 {
+    text-align: center;
+    font-weight: 500;
+}
+
+.box02 p {
+     text-align: justify;
+}
+
+.box03 {
+     max-width: 2000px;
+}
+
+p.tresc01 {
+    text-align: justify;
+}
+
+.social a {
+    font-family: 'Merriweather', serif;
+}
+
+.stopka {
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.box01_02_napi h4 {
+   font-family: 'Merriweather', serif;
+   padding-top: 20px;
+}
+
+.stopka, p {
+    text-align: center;
+}
+
+.mapa {
+    padding-left: 20px;
+}
+
+.adres {
+    padding-left: 20px;
+}
+
+.social, li {
+    padding-top: 20px;
+}

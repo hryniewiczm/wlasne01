@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+ <html lang="pl">
+  <head>
+   
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109892265-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-109892265-1');
+    </script>
+
+    <meta charset="utf-8">
+    <title>Kontakt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/reset.css">
+    <link rel="stylesheet" href="style/w3css.css">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/team02_01.png">
+  </head>
+  <body>
+    <!--Skrypt do Facebooka-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.11';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top navigacja">
+      <div class="w3-bar w3-white w3-wide w3-padding w3-card w3-round">
+        <img src="images/team02.png" alt="team02">
+        <!-- Float links to the right. Hide them on small screens -->
+        <div class="w3-right w3-hide-small">
+          <a href="index.html" class="w3-bar-item w3-button">Strona główna</a>
+          <a href="o_nas.html" class="w3-bar-item w3-button">O nas</a>
+          <a href="diety.html" class="w3-bar-item w3-button">Rodzaje diet</a>
+          <a href="alergeny.html" class="w3-bar-item w3-button">Alergeny</a>
+          <a href="kontakt.html" class="w3-bar-item w3-button">Kontakt</a>
+        </div>
+		</div>
+	  </div>
+   
+    <!-- Header -->
+    <header class="home w3-display-container w3-content w3-wide" id="home">
+      <img class="home-img w3-image" src="images/salad.jpg" alt="healthy_team">
+      <div class="w3-display-middle w3-margin-top w3-center">
+          <h1 class="w3-xxxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min w3-round"><b>Kontakt</b></span></h1>
+      </div>
+    </header>
+
+    <!-- Page content -->
+    
+        <div class="box01 w3-row w3-display-container w3-content w3-padding">
+        <div class="w3-col l6 m12 s12">
+            <div id="map" style="width:100%;height:500px"></div>
+                <script>
+                function myMap() {
+                  var myCenter = new google.maps.LatLng(53.4504331,14.5340195);
+                  var mapCanvas = document.getElementById("map");
+                  var mapOptions = {center: myCenter, zoom: 15};
+                  var map = new google.maps.Map(mapCanvas, mapOptions);
+                  var marker = new google.maps.Marker({position:myCenter});
+                  marker.setMap(map);
+
+                  // Zoom to 9 when clicking on marker
+                  google.maps.event.addListener(marker,'click',function() {
+                    map.setZoom(9);
+                    map.setCenter(marker.getPosition());
+                  });
+                }
+                </script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWGRIDrtq_UuIBr0zznB-5TV-kgCUewdQ&callback=myMap"></script>       
+                
+        </div>
+        <div class="adres w3-col l6 m6 s12 w3-padding-32">
+            <div>Technopark Pomerania<br/>
+                ul. Cyfrowa 2-8<br/>71-441 Szczecin<br/></div>
+                <ul class="social w3-xlarge">
+                   <li><a href="https://www.facebook.com"><i class="fa fa-facebook-official w3-hover-opacity w3-margin-right"></i></a>Facebook</li>
+                   <li><a href="https://www.google.pl"><i class="fa fa-google-plus-square w3-hover-opacity w3-margin-right"></i></a>Google</li>
+                   <li></li>
+                </ul><br/>
+
+                       <div id="fCzas"></div>
+                       <div id="fData"></div>
+        
+        </div>
+    </div>
+      <div class="box01 w3-row w3-display-container w3-content w3-padding">
+          <div class="adres w3-col l12 m12 s12 w3-padding-32">
+              <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="500" data-height="100" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+          </div>
+      </div>
+        <script>
+            (function() {
+                function leadingZero(i) {
+                    return (i < 10)? '0'+i : i;
+                }
+
+                function showTextTime() {
+                    var currentDate = new Date();
+                    var days = ["Niedziela", "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota"];
+                    var textDate = leadingZero(currentDate.getDate()) + "." + leadingZero((currentDate.getMonth()+1)) + "." + currentDate.getFullYear() + " - " + days[currentDate.getDay()];
+                    var textTime = leadingZero(currentDate.getHours()) + ":" + leadingZero(currentDate.getMinutes()) + ":" + leadingZero(currentDate.getSeconds());
+
+
+                    document.querySelector('#fData').innerHTML = textDate;
+                    document.querySelector('#fCzas').innerHTML = textTime;
+
+                    setTimeout(function() {
+                        showTextTime()
+                    }, 1000);
+                }
+
+                showTextTime();
+            })();
+        </script>
+
+<!-- Footer -->
+    <footer class="stopka w3-row-padding w3-container w3-padding-32 w3-center w3-xlarge">
+      <p class="w3-medium">&copy; <a href="mailto:healthyteam2017@gmail.com" id="w3-hover-opacity">Healthy Team.</a>Wszelkie prawa zastrzeżone.</p>
+    </footer>
+  </body>
+  </html>
